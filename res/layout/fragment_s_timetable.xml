@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:columnCount="5"
+    android:background="@drawable/screen_bg"
+    android:paddingLeft="10dp"
+    android:paddingTop="80dp"
+    android:paddingRight="10dp"
+    android:id="@+id/gl">
+
+    <TextView android:text="Fri"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:textColor="#9eba40"
+        android:id="@+id/s_timetablefri"
+        android:textSize="20dp"/>
+
+    <TextView android:text="Thu"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:textColor="#9eba40"
+        android:textSize="20dp"
+        android:id="@+id/s_timetablethu"/>
+
+    <TextView android:text="Wed"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:textColor="#9eba40"
+        android:id="@+id/s_timetablewed"
+        android:textSize="20dp"/>
+
+    <TextView android:text="Tue"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:textColor="#9eba40"
+        android:textSize="20dp"
+        android:id="@+id/s_timetabletue"/>
+
+    <TextView android:text="Mon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:textColor="#9eba40"
+        android:id="@+id/s_timetablemon"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_columnSpan="5"
+        android:gravity="center"/>
+
+
+
+</GridLayout>

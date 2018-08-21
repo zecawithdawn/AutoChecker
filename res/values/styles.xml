@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:circular="http://schemas.android.com/apk/res/com.vimana.widgets.progressbar">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarSize">5dp</item>
+        <!-- Customize your theme here. -->
+
+    </style>
+
+
+    <style name="Widget"></style>
+
+    <style name="Widget.ProgressBar.CircularProgressBar" parent="Widget">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="progressColor">@color/circular_progress_default_progress</item>
+        <item name="hasShadow">true</item>
+        <item name="strokeWidth">20</item>
+        <item name="c_titleColor">@color/circular_progress_default_title</item>
+        <item name="c_subtitleColor">@color/circular_progress_default_subtitle</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Widget.ProgressBar.Holo.CircularProgressBar" parent="Widget.ProgressBar.CircularProgressBar">
+        <item name="hasShadow">false</item>
+        <item name="strokeWidth">5</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme1" parent="@style/Theme.AppCompat.Light">
+        <item name="actionBarStyle">@style/ActionBarStyleBig</item>
+        <item name="android:background">@color/actionbar_background</item>
+
+    </style>
+
+    <!-- Edit on any of them the height for actionBar -->
+    <style name="ActionBarStyleBig" parent="@style/Theme.AppCompat.Light">
+        <item name="height">@dimen/bigActionBAr</item>
+    </style>
+
+    <!--this is 최갑규꺼 -->
+    <style name="scrollbar_shape_style">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_vertical_thumbs</item>
+        <item name="android:scrollbarTrackVertical">@drawable/scrollbar_vertical_track</item>
+        <item name="android:scrollbarSize">12dp</item>
+        <item name="android:scrollbarFadeDuration">2000</item>
+        <item name="android:scrollbarDefaultDelayBeforeFade">1000</item>
+    </style>
+</resources>

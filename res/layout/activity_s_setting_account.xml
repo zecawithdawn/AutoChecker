@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kyh.real.S_Setting.S_Setting_Account">
+
+    <RelativeLayout
+        android:id="@+id/custom_actionbar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:background="#90C13B">
+
+        <ImageView
+
+            android:id="@+id/back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="7dp"
+            android:src="@drawable/back2" />
+
+        <TextView
+            android:id="@+id/act_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:fontFamily="sans-serif"
+            android:text="계정설정"
+            android:textColor="#FFFFFF"
+            android:textSize="23dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/custom_actionbar"
+        android:background="@drawable/screen_bg">
+
+    <TextView
+        android:id="@+id/profile_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프로필"
+        android:textColor="#90C13B"
+        android:textSize="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif"
+        />
+    <RelativeLayout
+        android:layout_below="@id/profile_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_dash"
+        >
+        <ImageView
+            android:id="@+id/profile_img"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/shin"
+            />
+
+        <TextView
+
+            android:id="@+id/device_num"
+            android:fontFamily="sans-serif"
+            android:layout_toRightOf="@id/profile_img"
+            android:textSize="10dp"
+            android:text="기기번호"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:id="@+id/device_number"
+            android:layout_below="@id/device_num"
+            android:layout_toRightOf="@id/profile_img"
+            android:fontFamily="sans-serif"
+            android:textSize="10dp"
+            android:text="01023012031023"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/dept"
+            android:layout_below="@+id/device_number"
+            android:layout_toRightOf="@id/profile_img"
+            android:fontFamily="sans-serif"
+            android:textSize="10dp"
+            android:text="소속"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/dept_name"
+            android:layout_below="@+id/dept"
+            android:layout_toRightOf="@id/profile_img"
+            android:fontFamily="sans-serif"
+            android:text="테크노프로덕트 디자인전공"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

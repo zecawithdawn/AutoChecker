@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/srl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#313131"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        >
+
+        <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/p_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/menu" />
+
+
+        <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/p_img"
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_below="@id/p_back"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/son" />
+
+        <TextView
+            android:id="@+id/p_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_img"
+            android:layout_marginBottom="5dp"
+            android:text="손승우"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            android:textColor="#8EBE3B"
+            android:textSize="22dp"
+
+            />
+
+        <TextView
+            android:id="@+id/p_dept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_name"
+            android:layout_marginBottom="5dp"
+            android:text="테크노 프로덕트 디자인학과"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/p_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_dept"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="3dp"
+            android:drawableBottom="@drawable/shape"
+            android:paddingBottom="10dp"
+            android:text="hannah0409@naver.com"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/p_mail"
+            android:layerType="software"
+            android:src="@drawable/shape"
+            android:id="@+id/imageView" />
+
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/p_gg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_mail"
+            android:choiceMode="singleChoice"
+            android:divider="@drawable/shape"
+            android:dividerHeight="2dp"
+            android:layerType="software"
+
+
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_above="@+id/logout"
+            android:layerType="software"
+            android:src="@drawable/shape" />
+
+        <ImageView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/logoutimg"
+
+            android:layout_below="@+id/p_gg"
+            android:layout_alignEnd="@+id/p_back" />
+
+    </RelativeLayout>
+</RelativeLayout>
+
+    <!--<ListView xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:id="@+id/gg"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:background="#cccc"--><!--android:choiceMode="singleChoice"--><!--android:divider="@android:color/transparent"--><!--android:dividerHeight="0dp"--><!--tools:context=".NavigationDrawerFragment" />--><!--tools:context=".NavigationDrawerFragment"-->

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#9eba40"
+        android:id="@+id/s_setting_version_actionbar"
+        >
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:id="@+id/s_setting_version_backbutton"
+            android:background="@drawable/back1"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/reg_title"
+            android:textSize="23dp"
+            android:textColor="#ffffff"
+            android:text="버전정보"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

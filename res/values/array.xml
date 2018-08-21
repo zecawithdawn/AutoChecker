@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="state">
+        <item>출석</item>
+        <item>지각</item>
+        <item>결석</item>
+    </string-array>
+
+    <string-array name="course">
+        <item>마이크로프로세서인터페이스</item>
+        <item>컴퓨터네트워크</item>
+        <item>운영체제론</item>
+    </string-array>
+</resources>

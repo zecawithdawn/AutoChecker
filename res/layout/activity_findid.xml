@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/screen_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#9eba40"
+        android:id="@+id/id_actionbar"
+        >
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:id="@+id/id_backbutton"
+            android:background="@drawable/back1"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/id_title"
+            android:textSize="23dp"
+            android:textColor="#ffffff"
+            android:text="아이디 찾기"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/FI_rbg"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/id_actionbar"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ToggleButton
+            android:id="@+id/FI_stu"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:textOff="학생"
+            android:textOn="학생"
+            android:textSize="20dp"
+            android:background="#50ffffff"
+            android:onClick="onToggle"
+            android:checked="true"
+            />
+
+        <ToggleButton
+            android:id="@+id/FI_pro"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:textOff="교수"
+            android:textOn="교수"
+            android:textSize="20dp"
+            android:background="#204b4b4b"
+            android:onClick="onToggle"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/FI_sntext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FI_rbg"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:text="이름"
+        android:textColor="#9eba40"
+        />
+
+    <EditText
+        android:id="@+id/FI_sntf"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/FI_sntext"
+        android:layout_below="@+id/FI_sntext"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:singleLine = "true"
+        android:lines = "1"/>
+
+    <TextView
+        android:id="@+id/FI_sitext"
+        android:layout_below="@+id/FI_sntf"
+        android:layout_alignLeft="@+id/FI_sntext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:text="학번"
+        android:textColor="#9eba40"
+        />
+
+    <EditText
+        android:id="@+id/FI_sitf"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/FI_sitext"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:singleLine = "true"
+        android:lines = "1"/>
+
+    <TextView
+        android:id="@+id/FI_letf"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/FI_sitf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/FI_button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/FI_letf"
+        android:background="#9eba40"
+        android:text="확인"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

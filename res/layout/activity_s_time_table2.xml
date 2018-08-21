@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/s_timetable2_scroll">
+        <LinearLayout
+            android:id="@+id/s_timetableList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/s_timetable2_create"
+        android:layout_width="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
+        android:layout_below="@+id/s_timetable2_scroll"
+        android:background="@drawable/create"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>

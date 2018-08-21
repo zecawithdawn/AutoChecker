@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50ffffff"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/thisttimage"/>
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="3"
+        android:id="@+id/s_timetable2_thistext"
+        android:textColor="#9eba40"
+        android:layout_gravity="center"
+        android:text="CAD2\n인터렉티브실"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="5"
+        android:id="@+id/s_timetable2_thistime"
+        android:textColor="#9eba40"
+        android:layout_gravity="center"
+        android:gravity="right"/>
+
+</LinearLayout>

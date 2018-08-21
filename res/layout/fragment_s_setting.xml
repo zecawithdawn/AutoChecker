@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_bg">
+
+    <ScrollView
+        android:id="@+id/s_setting_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="40dp"
+        android:fadeScrollbars="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/s_setting_LL"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/border_line"
+                android:layoutDirection="ltr"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    android:text="로그인정보"
+                    android:textColor="@color/actionbar_background"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/setting_menu">
+
+                    <TextView
+                        android:id="@+id/s_setting_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="hanyang2015" />
+
+                    <ImageView
+                        android:id="@+id/s_setting_id_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/back3"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/s_setting_autoLogin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="자동로그인" />
+
+                    <CheckBox
+                        android:id="@+id/s_setting_autoLogin_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    android:text="알림설정"
+                    android:textColor="@color/actionbar_background"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/setting_menu">
+
+                    <TextView
+                        android:id="@+id/s_setting_alarm"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="알림설정" />
+
+                    <ImageView
+                        android:id="@+id/s_setting_alarm_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignBottom="@+id/s_setting_alarm"
+                        android:layout_alignRight="@+id/s_setting_alarm"
+                        android:background="@drawable/back3"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/s_setting_push_notification"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="푸시알림" />
+
+                    <CheckBox
+                        android:id="@+id/s_setting_push_notification_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignBottom="@+id/s_setting_push_notification"
+                        android:layout_alignRight="@+id/s_setting_push_notification"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    android:text="기본정보"
+                    android:textColor="@color/actionbar_background"
+                    android:textSize="15dp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/setting_menu">
+
+                    <TextView
+                        android:id="@+id/s_setting_version_info"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="버전정보" />
+
+                    <TextView
+                        android:id="@+id/s_setting_version_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="220dp"
+                        android:gravity="center_vertical"
+                        android:paddingRight="10dp"
+                        android:text="0.01v"
+                        android:textColor="#0000ff" />
+
+                    <ImageView
+                        android:id="@+id/s_setting_version_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/back3" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/s_setting_LL"
+                android:id="@+id/s_setting_button"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:text="저장"
+                android:background="#9eba40"
+                android:textColor="#ffffff"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

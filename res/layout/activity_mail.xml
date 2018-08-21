@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.kyh.real.LoginRegister.Mailactivity"
+    android:background="@drawable/screen_bg">
+
+    <TextView android:text="  " android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:id="@+id/mail_text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mail_text"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="위의 주소로 인증메일이 전송되었습니다.\n이메일을 확인 하신후 링크를 눌러\n인증을 완료하세요."
+        android:gravity="center"
+        android:textColor="#000000"
+        android:id="@+id/mail_text2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="인증이 안될경우\nxxx-xxxx-xxxx로 연락주세요."
+        android:textColor="#9eba40"
+        android:layout_below="@+id/mail_text2"
+        android:layout_alignLeft="@id/mail_text2"
+        android:id="@+id/mail_text3"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/mail_text3"
+        android:id="@+id/mail_button"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="확 인"
+        android:background="#9eba40"
+        android:textColor="#ffffff"
+       />
+
+</RelativeLayout>

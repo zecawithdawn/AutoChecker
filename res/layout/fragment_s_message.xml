@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/screen_bg">
+
+    <ListView
+        android:id="@+id/s_message_listv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:choiceMode="singleChoice"
+        android:divider="@drawable/shape"
+        android:dividerHeight="2dp"
+        android:layerType="software">
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/s_message_nimage"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/s_message_listv"
+        android:layerType="software"
+        android:src="@drawable/shape" />
+
+    <TextView
+        android:id="@+id/no_data1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="표시할 내용이 없습니다."
+
+        />
+</RelativeLayout>

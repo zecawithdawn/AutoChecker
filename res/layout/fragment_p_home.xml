@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/beaconNumber"
+        android:layout_alignParentRight="true"
+        android:textSize="22dp"
+        android:singleLine="true"
+        android:text="32/40"
+        android:textColor="@color/material_blue_grey_900"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_toLeftOf="@+id/beaconNumber"
+        android:layout_margin="10dp"
+        android:text="SYNC"
+        android:textSize="7dp"
+        android:id="@+id/syncBtn"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignBaseline="@+id/beaconNumber"
+        android:id="@+id/classInfo"
+        android:layout_alignParentLeft="true"
+        android:textSize="15dp"
+        android:singleLine="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:background="#7BC280"
+        android:textColor="#ff000000"
+        android:text="기초디자인"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/beaconNumber"
+        android:layout_alignRight="@id/beaconNumber"
+        android:text="결석생\n우선보기"
+        android:textSize="10sp"
+        android:id="@+id/checkBox"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:textSize="10dp"
+        android:id="@+id/clearButton"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/btn_p_home_clr"
+        android:layout_toLeftOf="@+id/checkBox"
+        android:layout_alignBaseline="@+id/checkBox"/>
+
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/clearButton"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="30dp"
+        android:hint="학생검색"
+        android:textSize="13dp"
+        android:singleLine="true"
+        android:lines="1"
+        android:layout_below="@+id/classInfo"
+        android:layout_alignBaseline="@id/checkBox"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/checkBox">
+    </ListView>
+    
+    <TextView
+        android:id="@+id/listEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="표시할 내용이 없습니다."
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:paddingTop="30dp"
+        android:layout_below="@+id/checkBox"/>
+
+    <ProgressBar
+        style="?android:progressBarStyleLarge"
+        android:id="@+id/p_home_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
